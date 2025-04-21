@@ -11,6 +11,6 @@ app.get("/callback", (req, res) => {
   res.send("test");
 });
 
-app.listen(PORT, () => {
+app.listen(port, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
 });
