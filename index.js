@@ -11,6 +11,16 @@ app.get("/callback", (req, res) => {
   res.send("test");
 });
 
+app.get("/success", (req, res) => {
+    console.log("success ===", req);
+    res.send("success");
+  });
+
+  app.get("/failure", (req, res) => {
+    console.log("failure ===", req);
+    res.send("failure");
+  });
+
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
 });
