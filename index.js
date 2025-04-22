@@ -12,7 +12,7 @@ app.get("/callback", (req, res) => {
 });
 
 app.get("/success", (req, res) => {
-    console.log("success ===", req);
+    console.log("success ===", req.query);
     res.send("success");
   });
 
